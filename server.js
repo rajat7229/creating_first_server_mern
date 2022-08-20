@@ -1,6 +1,6 @@
 const http = require('http');
 
-const port = 7229;
+const port = 7229; //local port number
 
 http.createServer((request, response) => {
     response.writeHead(200, {'Content-Type': "text/html"});
