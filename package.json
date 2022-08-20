@@ -1,0 +1,19 @@
+{
+  "name": "creating_first_server_mern",
+  "version": "1.0.0",
+  "description": "My first node.js server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajat7229/creating_first_server_mern.git"
+  },
+  "author": "Rajat Kumar Singh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rajat7229/creating_first_server_mern/issues"
+  },
+  "homepage": "https://github.com/rajat7229/creating_first_server_mern#readme"
+}
