@@ -16,7 +16,7 @@ app.get("/todos", (req, res) => {
 });
 
 http://localhost:7229/todos
-app.post("/todos", (res,req) => {
+app.post("/todos", (req,res) => {
     let newToDoItem = req.body.item;
     toDoList.push(newToDoItem);
     res.status(201).send({
