@@ -68,4 +68,4 @@ http
     console.log(`Nodejs server started on port ${port}`);
   });
 
-//  http://localhost:7229 // use this to open server
+//  http://localhost:7229/todos // use this to open server
