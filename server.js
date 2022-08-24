@@ -20,8 +20,23 @@ app.post("/todos", (req,res) => {
     let newToDoItem = req.body.item;
     toDoList.push(newToDoItem);
     res.status(201).send({
-        message: "Task added successfully",
+        message: "Task added successfully"
     }); 
+});
+
+app.delete("/todos", (req, res) => {
+    //callback
+    const itemToDelete = req.body.item;
+
+    toDoList.find((element, index) => {
+        if (element === itemToDelete) {
+            toDoList.splice(index, 1);
+        }
+    });
+
+    res.status(202).send({
+        message: `Deleted item "${req.body.item}"`
+    })
 });
 
 app.listen(port, () => {
