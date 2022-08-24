@@ -36,7 +36,17 @@ app.delete("/todos", (req, res) => {
 
     res.status(202).send({
         message: `Deleted item "${req.body.item}"`
-    })
+    });
+});
+
+//put,patch // all the other methods on a particular route
+app.all("/todos", (req, res) => {
+    res.status(501).send();
+});
+
+//all the other routes
+app.all('*', (req, res) => {
+    res.status(404), send();
 });
 
 app.listen(port, () => {
